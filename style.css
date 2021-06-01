@@ -4,7 +4,7 @@ html {
 }
 #navbar {
     display: grid;
-    grid-template-columns: 55px 55px 1fr 55px 55px 55px 80px;
+    grid-template-columns: 80px 55px 1fr 55px 55px 55px 80px;
     grid-template-rows: 40px;
     grid-template-areas: 
     "about store . gmail image menu sign-in";
@@ -24,6 +24,7 @@ a:hover {
     grid-area: about;
     justify-self: center;
     align-self: center;
+    padding-left: 0px;
 }
 #store {
     grid-area: store;
@@ -104,6 +105,7 @@ input:focus {
     grid-area: flexbox;
     justify-self: center;
     align-self: center;
+    min-width: 350px;
 
 }
 #google-search-btn {
@@ -112,6 +114,7 @@ input:focus {
     padding: 7px 15px 7px 15px;
     border-radius: 3px;
     margin-right: 25px;
+    margin-left: 30px;
     border: 1px solid rgb(255, 255, 255);    
 }
 #lucky-search-btn {
@@ -131,7 +134,7 @@ input:focus {
 
 #footer {
     display: grid;
-    grid-template-columns: 85px 65px 125px 1fr 55px 55px 55px;
+    grid-template-columns: 100px 100px 125px 1fr 80px 80px 80px;
     grid-template-rows: 50px;
     grid-template-areas: 
     "advertising business how-search-works carbon-neutral privacy terms settings";
@@ -155,13 +158,14 @@ input:focus {
 
 #united-kingdom {
     margin: 10px;
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0px 0px 14px;
 }
 
 #advertising {
     grid-area: advertising;
     justify-self: center;
     align-self: center;
+    padding-left: 20px;
 }
 #business {
     grid-area: business;
@@ -177,6 +181,8 @@ input:focus {
     grid-area: carbon-neutral;
     justify-self: center;
     align-self: center;
+    padding-right: 125px;
+    min-width: 200px;
 }
 #green-leaf {
     height: 15px;
@@ -195,4 +201,5 @@ input:focus {
     grid-area: settings;
     justify-self: center;
     align-self: center;
+    padding-right: 20px;
 }
